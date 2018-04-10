@@ -1,4 +1,4 @@
-{% set version = '0.8.6' %}
+{% set version = "0.8.6.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/jmv_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/jmv/jmv_{{ version }}.tar.gz
-  sha256: 983354239de3d9ada36f7262cd8f1eaecf312eba67c93ee5fa667291c8b205ab
+  sha256: 7680ae0d413bd719ed5adeec6cb4520f866ed464be26a33273aca04f4db4c32a
 
 build:
   number: 0
