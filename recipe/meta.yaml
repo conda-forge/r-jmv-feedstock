@@ -1,4 +1,4 @@
-{% set version = '0.9.6' %}
+{% set version = '0.9.6.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jmv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jmv/jmv_{{ version }}.tar.gz
-  sha256: 1718cbab4e37f9028bd9655985c3ba3a2c5123b1110d41bd86880cf3b8a12682
+  sha256: 18d44078f5d01a6def94e05e32f120483ea612dae458b1b998882c5e02496581
 
 build:
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-bayesfactor
@@ -85,17 +85,12 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
 
 # Package: jmv
 # Type: Package
 # Title: The 'jamovi' Analyses
-# Version: 0.9.6
+# Version: 0.9.6.1
 # Date: 2018-12-11
 # Author: Ravi Selker, Jonathon Love, Damian Dropmann
 # Maintainer: Jonathon Love <jon@thon.cc>
@@ -108,6 +103,6 @@ extra:
 # RoxygenNote: 6.1.1
 # VignetteBuilder: knitr
 # NeedsCompilation: no
-# Packaged: 2018-12-11 00:33:21 UTC; jonathon
+# Packaged: 2019-04-21 09:33:01 UTC; ripley
 # Repository: CRAN
-# Date/Publication: 2018-12-11 05:50:03 UTC
+# Date/Publication: 2019-04-22 06:58:25 UTC
