@@ -3,7 +3,7 @@ About r-jmv
 
 Home: https://CRAN.R-project.org/package=jmv
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
