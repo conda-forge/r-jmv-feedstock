@@ -1,4 +1,4 @@
-{% set version = '1.0.8' %}
+{% set version = "1.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jmv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jmv/jmv_{{ version }}.tar.gz
-  sha256: 6ff631ad693e4b80f015b3d45ece45d1741874a0e07b47fe2c0a817f5e9dc240
+  sha256: b6c19aac6c43e5da9fa49ebde3d262d62d90928a68aa49fdf66effd81a6511c3
 
 build:
   merge_build_host: True  # [win]
