@@ -1,4 +1,4 @@
-{% set version = "1.2.5" %}
+{% set version = "1.2.23" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jmv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jmv/jmv_{{ version }}.tar.gz
-  sha256: b6c19aac6c43e5da9fa49ebde3d262d62d90928a68aa49fdf66effd81a6511c3
+  sha256: 1730490ffeccf9a44d8539218bfc087a7f5c9e795c7449ee05dda5372ce58805
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -76,13 +76,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=jmv
   license: GPL-2
-  summary: A suite of common statistical methods such as descriptives, t-tests, ANOVAs, regression,
-    correlation matrices, proportion tests, contingency tables, and factor analysis.
-    This package is also useable from the 'jamovi' statistical spreadsheet (see <https://www.jamovi.org>
-    for more information).
+  summary: A suite of common statistical methods such as descriptives, t-tests, ANOVAs, regression, correlation matrices, proportion tests, contingency tables, and factor analysis. This package is also useable from the 'jamovi' statistical spreadsheet (see <https://www.jamovi.org> for more information).
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
