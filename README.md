@@ -1,11 +1,11 @@
-About r-jmv
-===========
+About r-jmv-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jmv-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=jmv
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jmv-feedstock/blob/main/LICENSE.txt)
 
 Summary: A suite of common statistical methods such as descriptives, t-tests, ANOVAs, regression, correlation matrices, proportion tests, contingency tables, and factor analysis. This package is also useable from the 'jamovi' statistical spreadsheet (see <https://www.jamovi.org> for more information).
 
