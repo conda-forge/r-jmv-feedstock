@@ -1,4 +1,4 @@
-{% set version = "2.5.6" %}
+{% set version = "2.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jmv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jmv/jmv_{{ version }}.tar.gz
-  sha256: 7fc9e02ed4cda2128bebde3689004f3e032503e1fdd24d48b7bf8f98f0e70b1c
+  sha256: ab6ffec88c668f10ed984b68c339e37437d5b36d1e91eaf84b9bd49dda302d78
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
